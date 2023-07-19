@@ -5,10 +5,8 @@
 <html>
 <head>
 <title>ATM Interface</title>
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script
-	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
 	function validateAmount(input) {
 		var amount = input.value;
@@ -26,7 +24,7 @@
 	        input.value = input.value.replace(/\D/g, '');
 	    }
 </script>
- 
+
 </head>
 <body>
 	<div class="container mt-5">
@@ -43,7 +41,6 @@
 			<li class="nav-item"><a class="nav-link" data-toggle="tab"
 				href="#statement">Print Account Statement</a></li>
 		</ul>
-
 		<div class="tab-content mt-5">
 			<div class="tab-pane fade show active" id="withdraw">
 				<h4>Withdraw Money</h4>
@@ -72,7 +69,6 @@
 					<button type="submit" class="btn btn-primary">Withdraw</button>
 				</form>
 			</div>
-
 			<div class="tab-pane fade" id="deposit">
 				<h4>Deposit Money</h4>
 				<form action="DepositMoney" method="post">
@@ -100,9 +96,7 @@
 					</div>
 					<button type="submit" class="btn btn-primary">Deposit</button>
 				</form>
-
 			</div>
-
 			<div class="tab-pane fade" id="balance">
 				<h4>Check Account Balance</h4>
 				<form action="BalanceCheck" method="post">
@@ -138,7 +132,6 @@
 					<button type="submit" class="btn btn-primary">Retrieve PIN</button>
 				</form>
 			</div>
-
 			<div class="tab-pane fade" id="statement">
 				<h4>Print Account Statement</h4>
 				<form action="Statement" method="post">
